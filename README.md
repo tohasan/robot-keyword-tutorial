@@ -20,7 +20,7 @@ java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./r
 
 The next example shows how to import a Library (in this case the String Library). It also shows a simple for-loop. __Please note__ that the "\" are required in the lines belonging to the loop.
 
-__Test execution__  
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-0-trivial/sample-1-trivial-extended.txt)  
 pybot --outputdir ./report sample-1-trivial-extended.txt  
 java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-trivial.txt
 
@@ -29,7 +29,7 @@ java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./r
 
 One of the key features of the _Robot Framework_ is the possibility to combine existing _Keywords_ into new _Keywords_ within some text files. This first example shows the most simple way of defining a customized keyword within the _Testsuite_-file.
 
-__Test execution__  
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-1-own-keyword/sample-0-own-keyword.txt)    
 pybot --outputdir ./report sample-0-own-keyword.txt  
 java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-own-keyword.txt
 
