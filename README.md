@@ -8,10 +8,15 @@ Therefore the tutorial is splitted into really small sections and is always only
 
 This contains the most basic example on how to define a testcase using keywords (here only the __Log__ keyword is used that prints to the generated log-file).
 
-### Test execution
-pybot --outputdir ./report sample-0-trivial.txt
+__Test execution__  
+pybot --outputdir ./report sample-0-trivial.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-trivial.txt
+
 
 The next example shows how to import a Library (in this case the String Library). It also shows a simple for-loop.
 
-### Test Execution
-pybot --outputdir ./report sample-1-trivial-extended.txt
+__Test execution__  
+pybot --outputdir ./report sample-1-trivial-extended.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-trivial.txt
+
+
