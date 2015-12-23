@@ -12,7 +12,7 @@ __Note:__ All examples are shortly explained in the following and it is shown ho
 
 This contains the most basic example on how to define a testcase using keywords (here only the __Log__ keyword is used that prints to the generated log-file). __Note:__ There must be at least two spaces to separate arguments from keywords and arguments from each other. Furthermore there must be always an indention of two spaces in the beginning of each line below a testcase.  
 
-__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-0-trivial/sample-0-trivial.txt) 
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-0-trivial/sample-0-trivial.txt)  
 pybot --outputdir ./report sample-0-trivial.txt  
 java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-trivial.txt
 
