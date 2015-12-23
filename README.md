@@ -17,7 +17,7 @@ pybot --outputdir ./report sample-0-trivial.txt
 java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-trivial.txt
 
 
-The next example shows how to import a Library (in this case the String Library). It also shows a simple for-loop.
+The next example shows how to import a Library (in this case the String Library). It also shows a simple for-loop. __Please note__ that the "\" are required in the lines belonging to the loop.
 
 __Test execution__  
 pybot --outputdir ./report sample-1-trivial-extended.txt  
