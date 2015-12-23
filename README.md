@@ -33,4 +33,23 @@ __Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword
 pybot --outputdir ./report sample-0-own-keyword.txt  
 java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-own-keyword.txt
 
+----------------------------------------------------------------------------------------------------------------
+
+The second example shows the usage of an array as a parameter for a customized _Keyword_.
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-1-own-keyword/sample-1-own-keyword.txt)    
+pybot --outputdir ./report sample-1-own-keyword.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-1-own-keyword.txt
+
+----------------------------------------------------------------------------------------------------------------
+
+In this example the customized _Keyword_ is moved to an external _Resource_-file that is then used from within the _Testsuite_.
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-1-own-keyword/sample-2-own-keyword-resource.txt)  |  [VIEW RESOURCE FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-1-own-keyword/resource-2.txt)      
+pybot --outputdir ./report sample-2-own-keyword-resource.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-2-own-keyword-resource.txt
+
+----------------------------------------------------------------------------------------------------------------
+
+
 
