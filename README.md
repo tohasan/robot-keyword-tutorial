@@ -8,7 +8,7 @@
 * [sample-0-trivial](#sample-0-trivial)
 * [sample-1-own-keyword](#sample-1-own-keyword)
 * [sample-2-remote-keywords](#sample-2-remote-keywords)
-
+* [sample-3-variables](#sample-3-variables)
 
 <a name="introduction"></a>
 ## Introduction and Purpose
@@ -75,7 +75,7 @@ Using a remote library can be extremely helpful as it allows writing Keyword-Lib
 
 To make this example usable out of the box the corresponding JAR-File (implementing the remote library) is part of the example directory and can be started right away.
 
-__Preparation__  
+__Test Preparation__  
 Start the Remote Keyword Server by issuing (__Note:__ The sample server is using port 8270):  
 java -jar server/sample-remote-library-1.0-server.jar  
 
@@ -85,8 +85,27 @@ java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./r
 
 [top](#toc)
 
+<a name="sample-3-variables"></a>
+## sample-3-variables
+
+Variables are offering a lot of possibilities when writing tests with the Robot Framework. The following sample shows a most basic example on how to use variables.
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-3-variables/sample-0-variables.txt)      
+pybot --outputdir ./report sample-0-variables.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-variables.txt
 
 ----------------------------------------------------------------------------------------------------------------
+
+This example gives an example on how global variable values can be temporarily overwritten in the scope of a testcase. Note that this does not permanently change the value of the globally defined variable.
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-3-variables/sample-1-variables-scope.txt)      
+pybot --outputdir ./report sample-1-variables-scope.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-1-variables-scope.txt
+
+----------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
