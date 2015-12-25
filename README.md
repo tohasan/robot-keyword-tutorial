@@ -11,6 +11,7 @@
 * [sample-3-variables](#sample-3-variables)
 * [sample-4-tagging](#sample-4-tagging)
 * [sample-5-setup-teardown](#sample-5-setup-teardown)
+* [sample-6-parameter](#sample-6-parameter)
 
 
 <a name="introduction"></a>
@@ -155,3 +156,13 @@ java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./r
 
 [top](#toc)
 
+<a name="sample-6-parameter"></a>
+## sample-6-parameter
+
+Sometimes it might make sense to have _Keywords_ that can work with a lot of parameters. For example all the parameters that might be processed in a form of a web application. Using the "..."-syntax it is possible to split paramters to one _Keyword_ to sevaral lines and thus increase readability.
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-6-parameter/sample-0-parameters-divided.txt)      
+pybot --outputdir ./report sample-0-parameters-divided.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-parameters-divided.txt
+
+[top](#toc)
