@@ -79,7 +79,7 @@ Using a remote library can be extremely helpful as it allows writing Keyword-Lib
 
 To make this example usable out of the box the corresponding JAR-File (implementing the remote library) is part of the example directory and can be started right away.
 
-__Test Preparation__  
+__Test preparation__  
 Start the Remote Keyword Server by issuing (__Note:__ The sample server is using port 8270):  
 java -jar server/sample-remote-library-1.0-server.jar  
 
