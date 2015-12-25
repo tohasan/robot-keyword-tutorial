@@ -104,8 +104,13 @@ java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./r
 
 ----------------------------------------------------------------------------------------------------------------
 
+This example shows the usage of variable files. This is especially useful to define certain values (like URLs or database connections) differently for different test environments. The variable files are then passed in via a command line option.
 
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-3-variables/sample-2-variables-file.txt) | [VIEW LOCAL ENV FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-3-variables/variable-file-env-local.py) | [VIEW TEST ENV FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-3-variables/variable-file-env-test.py)      
+pybot --outputdir ./report --variablefile ./variable-file-env-local.py sample-2-variables-file.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report --variablefile ./variable-file-env-local.py sample-2-variables-file.txt
 
+__Note:__ Change the variable-file passed in and take a look at the resulting log-file.
 
-
+[top](#toc)
 
