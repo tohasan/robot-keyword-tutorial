@@ -1,5 +1,15 @@
 # Robot Framework - Keyword Tutorial
 
+## Table of contents
+
+[Introduction](#introduction)
+
+
+
+
+<a name="introduction"></a>
+## Introduction and Purpose
+
 The main idea of this project is to have easy and out-of-the-box working examples on how to work with the [Robot Framework](http://www.robotframework.org). And here especially with its most central feature, namely, _Keywords_.
 
 Therefore the tutorial is splitted into really small sections and is always only using those _Keywords_ that are part of the Robot Framework out-of-the-box. Thus no additional installation is required beside having a running _Robot Framework_ installation and forking/cloning this repository to try around with the examples.
@@ -7,6 +17,7 @@ Therefore the tutorial is splitted into really small sections and is always only
 I hope this tutorial can help on the one hand side to get a basic understanding how _Testsuites_ are written with the _Robot Framework_ using _Keywords_. Furthermore this might serve as a quick reference for more experienced users to just quickly take a look on how a certain feature is used (or a certain syntax).
 
 __Note:__ All examples are shortly explained in the following and it is shown how to start the example either using _pybot_ or the _Java installation_ of the _Robot Framework_. It is required that _pybot_ can be found from the PATH on your machine for this to work and the path to the Robot-JAR will most likely differ ;-). __It is expected that the execution is always triggered from the directory containing the _Testsuite_-files.__
+
 
 ## sample-0-trivial
 
@@ -57,7 +68,7 @@ Using a remote library can be extremely helpful as it allows writing Keyword-Lib
 To make this example usable out of the box the corresponding JAR-File (implementing the remote library) is part of the example directory and can be started right away.
 
 __Preparation__  
-Start the Remote Keyword Server by issuing:  
+Start the Remote Keyword Server by issuing (__Note:__ The sample server is using port 8270):  
 java -jar server/sample-remote-library-1.0-server.jar  
 
 __Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-2-remote-keywords/sample-0-remote.txt)      
