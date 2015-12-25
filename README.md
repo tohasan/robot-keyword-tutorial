@@ -10,6 +10,7 @@
 * [sample-2-remote-keywords](#sample-2-remote-keywords)
 * [sample-3-variables](#sample-3-variables)
 * [sample-4-tagging](#sample-4-tagging)
+* [sample-5-setup-teardown](#sample-5-setup-teardown)
 
 
 <a name="introduction"></a>
@@ -124,4 +125,33 @@ Tagging is a useful feature to have some kind of test coverage in the generated 
 __Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-4-tagging/sample-0-tagging.txt)      
 pybot --outputdir ./report sample-0-tagging.txt  
 java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-tagging.txt
+
+[top](#toc)
+
+<a name="sample-5-setup-teardown"></a>
+## sample-5-setup-teardown
+
+_Setup-_ and _Teardown_-functions (_Keywords_) are very helpful to separate preparation tasks from the real test execution. Furthermore it allows to perform global steps for a testsuite once (in the beginning and end). This is shown in the following example.
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-5-setup-teardown/sample-0-suite.txt)      
+pybot --outputdir ./report sample-0-suite.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-suite.txt
+
+----------------------------------------------------------------------------------------------------------------
+
+It is also possible to define _Setup-_ and _Teardown-_functions that are executed bevore and after the execution of every _Testcase_ of a _Testsuite_. Can be helpful if the same preparation/cleanup steps are required for each test.
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-5-setup-teardown/sample-1-test.txt)      
+pybot --outputdir ./report sample-1-test.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-1-test.txt
+
+----------------------------------------------------------------------------------------------------------------
+
+Finally some testcases might need specific preparation/cleanup functionality that is not part of the test itsself. This can be achieved as follows.
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-5-setup-teardown/sample-2-testcase.txt)      
+pybot --outputdir ./report sample-2-testcase.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-2-testcase.txt
+
+[top](#toc)
 
