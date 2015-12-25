@@ -5,9 +5,9 @@
 ## Table of Contents
 
 * [Introduction](#introduction)
-* [sample-0-trivial](sample-0-trivial)
+* [sample-0-trivial](#sample-0-trivial)
 * [sample-1-own-keyword](#sample-1-own-keyword)
-* [sample-2-remote-keywords](sample-2-remote-keywords)
+* [sample-2-remote-keywords](#sample-2-remote-keywords)
 
 
 <a name="introduction"></a>
