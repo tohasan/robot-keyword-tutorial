@@ -9,6 +9,8 @@
 * [sample-1-own-keyword](#sample-1-own-keyword)
 * [sample-2-remote-keywords](#sample-2-remote-keywords)
 * [sample-3-variables](#sample-3-variables)
+* [sample-4-tagging](#sample-4-tagging)
+
 
 <a name="introduction"></a>
 ## Introduction and Purpose
@@ -106,11 +108,20 @@ java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./r
 
 This example shows the usage of variable files. This is especially useful to define certain values (like URLs or database connections) differently for different test environments. The variable files are then passed in via a command line option.
 
-__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-3-variables/sample-2-variables-file.txt) | [VIEW LOCAL ENV FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-3-variables/variable-file-env-local.py) | [VIEW TEST ENV FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-3-variables/variable-file-env-test.py)      
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-3-variables/sample-2-variables-file.txt) | [VIEW LOCAL VARIABALE FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-3-variables/variable-file-env-local.py) | [VIEW TEST VARIABLE FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-3-variables/variable-file-env-test.py)      
 pybot --outputdir ./report --variablefile ./variable-file-env-local.py sample-2-variables-file.txt  
 java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report --variablefile ./variable-file-env-local.py sample-2-variables-file.txt
 
 __Note:__ Change the variable-file passed in and take a look at the resulting log-file.
 
 [top](#toc)
+
+<a name="sample-4-tagging"></a>
+## sample-4-tagging
+
+Tagging is a useful feature to have some kind of test coverage in the generated report. Just _tag_ each testcase with the proper - uhm - _tags_. __Note:__ Make sure you are using unique tag-names for the same features.
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-4-tagging/sample-0-tagging.txt)      
+pybot --outputdir ./report sample-0-tagging.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-tagging.txt
 
