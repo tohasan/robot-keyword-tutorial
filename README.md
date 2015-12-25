@@ -49,6 +49,24 @@ __Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword
 pybot --outputdir ./report sample-2-own-keyword-resource.txt  
 java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-2-own-keyword-resource.txt
 
+
+## sample-2-remote-keywords
+
+Using a remote library can be extremely helpful as it allows writing Keyword-Libraries in any programming language as long as it offers a XML-RPC interface. The example make use of a [very simple example of such a remote library that has been written in Java](https://github.com/ThomasJaspers/remote-keyword-library). 
+
+To make this example usable out of the box the corresponding JAR-File (implementing the remote library) is part of the example directory and can be started right away.
+
+__Preparation__  
+Start the Remote Keyword Server by issuing:  
+java -jar server/sample-remote-library-1.0-server.jar  
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-2-remote-keywords/sample-0-remote.txt)      
+pybot --outputdir ./report sample-0-remote.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-remote.txt
+
+
+
+
 ----------------------------------------------------------------------------------------------------------------
 
 
