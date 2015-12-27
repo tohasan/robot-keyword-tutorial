@@ -12,6 +12,7 @@
 * [sample-4-tagging](#sample-4-tagging)
 * [sample-5-setup-teardown](#sample-5-setup-teardown)
 * [sample-6-parameter](#sample-6-parameter)
+* [sample-7-conditional-execution](#sample-7-conditional-execution)
 
 
 <a name="introduction"></a>
@@ -164,5 +165,37 @@ Sometimes it might make sense to have _Keywords_ that can work with a lot of par
 __Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-6-parameter/sample-0-parameters-divided.txt)      
 pybot --outputdir ./report sample-0-parameters-divided.txt  
 java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-parameters-divided.txt
+
+[top](#toc)
+
+<a name="sample-7-conditional-execution"></a>
+## sample-7-conditional-execution
+
+This example shows how to execute a _Keyword_ set as a variable. This way it is for example possible to stear which 
+keyword to use for certain actions by overwriting this variable using a variable file or command line option. (Might be useful if the same keyword cannot be used locally and in some test environment.)
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-7-conditional-execution/sample-0-keyword-in-variable.txt)      
+pybot --outputdir ./report sample-0-keyword-in-variable.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-0-keyword-in-variable.txt
+
+__Test execution with different logging keyword__
+pybot --outputdir ./report --variable MY_LOGGING_KEYWORD:Log_Many -E space:_ sample-0-keyword-in-variable.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report --variable MY_LOGGING_KEYWORD:Log_Many -E space:_ sample-0-keyword-in-variable.txt
+
+----------------------------------------------------------------------------------------------------------------
+
+This example shows how to run a _Keyword_ based on a condition (aka some value in some variable). Use with care as it might make tests hard to understand and troubleshoot if they are failing.
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-7-conditional-execution/sample-1-run-keyword-if.txt)      
+pybot --outputdir ./report sample-1-run-keyword-if.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-1-run-keyword-if.txt
+
+----------------------------------------------------------------------------------------------------------------
+
+The following shows how to run a _Keyword_ and ignore any errors it produces. Might be useful when using temporary sometimes or maybe when addressing an external system during testing that provides a kind of "nice-to-have" feature.
+
+__Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-7-conditional-execution/sample-2-ignore-error.txt)      
+pybot --outputdir ./report sample-2-ignore-error.txt  
+java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-2-ignore-error.txt
 
 [top](#toc)
