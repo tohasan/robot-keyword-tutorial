@@ -76,7 +76,7 @@ java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./r
 <a name="sample-2-remote-keywords"></a>
 ## sample-2-remote-keywords
 
-Using a remote library can be extremely helpful as it allows writing Keyword-Libraries in any programming language as long as it offers a XML-RPC interface. The example make use of a [very simple example of such a remote library that has been written in Java](https://github.com/ThomasJaspers/remote-keyword-library). 
+Using a remote library can be extremely helpful as it allows writing Keyword-Libraries in any programming language as long as it offers a XML-RPC interface. The example make use of a [very simple example of such a remote library that has been written in Java](https://github.com/ThomasJaspers/remote-keyword-library).
 
 To make this example usable out of the box the corresponding JAR-File (implementing the remote library) is part of the example directory and can be started right away.
 
@@ -171,7 +171,7 @@ java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./r
 <a name="sample-7-conditional-execution"></a>
 ## sample-7-conditional-execution
 
-This example shows how to execute a _Keyword_ set as a variable. This way it is for example possible to stear which 
+This example shows how to execute a _Keyword_ set as a variable. This way it is for example possible to stear which
 keyword to use for certain actions by overwriting this variable using a variable file or command line option. (Might be useful if the same keyword cannot be used locally and in some test environment.)
 
 __Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-7-conditional-execution/sample-0-keyword-in-variable.txt)      
@@ -197,5 +197,16 @@ The following shows how to run a _Keyword_ and ignore any errors it produces. Mi
 __Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-7-conditional-execution/sample-2-ignore-error.txt)      
 pybot --outputdir ./report sample-2-ignore-error.txt  
 java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./report sample-2-ignore-error.txt
+
+[top](#toc)
+
+<a name="sample-8-database"></a>
+## sample-8-database
+
+java -cp '/usr/local/opt/robotframework/robotframework-2.9.2.jar:./lib/dblibrary-2.0.jar:./lib/postgresql-9.3-1102-jdbc41.jar' org.robotframework.RobotFramework --outputdir ./report sample-0-database.txt
+
+
+
+java -cp './dblibrary-2.0-server.jar:../lib/postgresql-9.3-1102-jdbc41.jar' java org.robot.database.server.RemoteServer --port 8270
 
 [top](#toc)
