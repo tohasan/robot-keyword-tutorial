@@ -204,7 +204,10 @@ java -jar /usr/local/opt/robotframework/robotframework-2.9.2.jar --outputdir ./r
 <a name="sample-8-database"></a>
 ## sample-8-database
 
-This example shows the usage of the Java Database Library for the Robot Framework. Please note that execution via pybot is not possible, but the next example shows the usage of the Database Library as a Remote Library. Then pybot can be used again.
+__Note:__ This example differs from the previous examples of this tutorial, as it requires a database to be setup and running. In this case PostgreSQL is used with an example that is described here: [https://github.com/ThomasJaspers/db_liquibase_sample](https://github.com/ThomasJaspers/db_liquibase_sample) The example can of course be easily changed to user another database and other tables by replacing the JDBC-driver and adepting the tests.
+The documentation for the Database Library is part of this tutorial and can be found here: [https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-8-database/doc/DatabaseLibrary_v20.html](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-8-database/doc/DatabaseLibrary_v20.html)
+
+This example shows the usage of the [Java Database Library](https://github.com/ThomasJaspers/robotframework-dblibrary) for the Robot Framework. Please note that execution via pybot is not possible, but the next example shows the usage of the Database Library as a Remote Library. Then pybot can be used again.
 
 __Test execution__  | [VIEW FILE](https://github.com/ThomasJaspers/robot-keyword-tutorial/blob/master/sample-8-database/sample-0-database.txt)      
 
