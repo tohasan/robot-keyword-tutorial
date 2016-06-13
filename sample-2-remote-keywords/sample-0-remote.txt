@@ -1,5 +1,5 @@
 *** Settings ***
-Library    Remote     http://localhost:8270
+Library    Remote     http://127.0.0.1:8270/    WITH NAME   SampleLib
 
 *** Test Cases ***
 Call Remote Keyword
